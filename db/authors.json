@@ -1,0 +1,211 @@
+[
+  {
+    "id": 1,
+    "name": "Angela Stanley",
+    "email": "jbell@riffpath.gov",
+    "key_url": "AngelaStanley",
+    "url": "http://localhost:3000/authors/1.json",
+    "posts": [
+      {
+        "title": "Título de Post 12",
+        "key_url": "TtuloDePost12"
+      },
+      {
+        "title": "Título de Post 20",
+        "key_url": "TtuloDePost20"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Jason Vasquez",
+    "email": "lnichols@dynabox.edu",
+    "key_url": "JasonVasquez",
+    "url": "http://localhost:3000/authors/2.json",
+    "posts": [
+      {
+        "title": "Título de Post 2",
+        "key_url": "TtuloDePost2"
+      },
+      {
+        "title": "Título de Post 5",
+        "key_url": "TtuloDePost5"
+      },
+      {
+        "title": "Título de Post 25",
+        "key_url": "TtuloDePost25"
+      },
+      {
+        "title": "Título de Post 27",
+        "key_url": "TtuloDePost27"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Heather Riley",
+    "email": "lgilbert@devpulse.name",
+    "key_url": "HeatherRiley",
+    "url": "http://localhost:3000/authors/3.json",
+    "posts": [
+      {
+        "title": "Título de Post 7",
+        "key_url": "TtuloDePost7"
+      },
+      {
+        "title": "Título de Post 23",
+        "key_url": "TtuloDePost23"
+      },
+      {
+        "title": "Título de Post 29",
+        "key_url": "TtuloDePost29"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Christopher Lawson",
+    "email": "sross@devify.net",
+    "key_url": "ChristopherLawson",
+    "url": "http://localhost:3000/authors/4.json",
+    "posts": [
+      {
+        "title": "Título de Post 8",
+        "key_url": "TtuloDePost8"
+      },
+      {
+        "title": "Título de Post 9",
+        "key_url": "TtuloDePost9"
+      },
+      {
+        "title": "Título de Post 16",
+        "key_url": "TtuloDePost16"
+      },
+      {
+        "title": "Título de Post 21",
+        "key_url": "TtuloDePost21"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Barbara Franklin",
+    "email": "hlawson@kwideo.name",
+    "key_url": "BarbaraFranklin",
+    "url": "http://localhost:3000/authors/5.json",
+    "posts": [
+      {
+        "title": "Título de Post 13",
+        "key_url": "TtuloDePost13"
+      },
+      {
+        "title": "Título de Post 22",
+        "key_url": "TtuloDePost22"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "David Nichols",
+    "email": "sporter@shufflebeat.biz",
+    "key_url": "DavidNichols",
+    "url": "http://localhost:3000/authors/6.json",
+    "posts": [
+      {
+        "title": "Título de Post 6",
+        "key_url": "TtuloDePost6"
+      },
+      {
+        "title": "Título de Post 10",
+        "key_url": "TtuloDePost10"
+      },
+      {
+        "title": "Título de Post 11",
+        "key_url": "TtuloDePost11"
+      },
+      {
+        "title": "Título de Post 18",
+        "key_url": "TtuloDePost18"
+      },
+      {
+        "title": "Título de Post 26",
+        "key_url": "TtuloDePost26"
+      },
+      {
+        "title": "Título de Post 28",
+        "key_url": "TtuloDePost28"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Eric Stone",
+    "email": "jwheeler@skidoo.org",
+    "key_url": "EricStone",
+    "url": "http://localhost:3000/authors/7.json",
+    "posts": [
+      {
+        "title": "Título de Post 4",
+        "key_url": "TtuloDePost4"
+      },
+      {
+        "title": "Título de Post 15",
+        "key_url": "TtuloDePost15"
+      },
+      {
+        "title": "Título de Post 19",
+        "key_url": "TtuloDePost19"
+      },
+      {
+        "title": "Título de Post 30",
+        "key_url": "TtuloDePost30"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Norma Graham",
+    "email": "emendoza@ainyx.gov",
+    "key_url": "NormaGraham",
+    "url": "http://localhost:3000/authors/8.json",
+    "posts": [
+      {
+        "title": "Título de Post 1",
+        "key_url": "TtuloDePost1"
+      },
+      {
+        "title": "Título de Post 24",
+        "key_url": "TtuloDePost24"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Kathryn Jordan",
+    "email": "mspencer@eazzy.com",
+    "key_url": "KathrynJordan",
+    "url": "http://localhost:3000/authors/9.json",
+    "posts": [
+      {
+        "title": "Título de Post 3",
+        "key_url": "TtuloDePost3"
+      },
+      {
+        "title": "Título de Post 14",
+        "key_url": "TtuloDePost14"
+      },
+      {
+        "title": "Título de Post 17",
+        "key_url": "TtuloDePost17"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Louise King",
+    "email": "mcarroll@mybuzz.gov",
+    "key_url": "LouiseKing",
+    "url": "http://localhost:3000/authors/10.json",
+    "posts": []
+  }
+]
