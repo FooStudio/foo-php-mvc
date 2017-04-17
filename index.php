@@ -7,8 +7,7 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 $app = App::getInstance();
-$app->bootstrap();
-//$app->setBasePath("/blog/");
+$app->boot();
 $app->addRoute('GET', '/', 'HomeController#index', 'home');
 $app->addRoute('GET', '/posts/[a:id]', 'PostsController#post', 'post');
 $app->start();

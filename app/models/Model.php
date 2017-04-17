@@ -48,10 +48,9 @@ class Model
     public static function find($id)
     {
         static::validateLoaded();
-        $all = static::$all;
-        foreach ($all as $item) {
+        foreach (static::$all as $item) {
             if ($item->key_url == $id) {
-                return static::toObject($item);
+                return $item;
             }
         }
         unset($item);
@@ -63,12 +62,7 @@ class Model
      */
     protected static function toObject($array)
     {
-        static::validateLoaded();
-        $object = new \stdClass();
-        foreach ($array as $key => $value) {
-            $object->$key = is_array($value) ? static::toObject($value) : $value;
-        }
-        return $object;
+        return json_decode(json_encode($array), FALSE);
     }
 
     protected static function validateLoaded()

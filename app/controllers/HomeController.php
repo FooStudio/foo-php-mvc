@@ -8,6 +8,7 @@
 
 namespace App\Controllers;
 
+use App\Models\Author;
 use App\Models\Post;
 
 class HomeController
@@ -16,6 +17,7 @@ class HomeController
     function index()
     {
         $posts = Post::all();
-        view('home.index', compact('posts'));
+        $authors = Author::all();
+        view('home.index', compact('posts', 'authors'));
     }
 }

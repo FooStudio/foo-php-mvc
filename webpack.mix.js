@@ -11,5 +11,20 @@ const {mix} = require('laravel-mix');
  |
  */
 
+mix.browserSync('foo-mvc.dev');
+
 mix.js('resources/assets/js/app.js', 'public/js')
-    .stylus('resources/assets/stylus/app.styl', 'public/css');
+    .stylus('resources/assets/stylus/app.styl', 'public/css', {
+        use: [
+            require('nib')(),
+            require("rupture")(),
+            require("poststylus")([
+                require("rucksack-css")({
+                    autoprefixer: true,
+                    fallbacks: false
+                }),
+                require("lost")()
+            ])
+        ],
+        import: ['~nib/lib/nib/index.styl', '~rupture/rupture/index.styl']
+    });

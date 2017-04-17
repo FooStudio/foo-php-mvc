@@ -11,7 +11,6 @@ namespace App\Models;
 
 class Author extends Model
 {
-
     protected static $name = "authors";
-
+    protected static $loaded = false;
 }

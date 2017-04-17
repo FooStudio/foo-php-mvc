@@ -1,6 +1,8 @@
-#Foo PHP MVC
+# Foo PHP MVC
 
-##Includes
+## Includes
 * AltoRouter
 * Blade Templating Engine
 * Laravel Elixir
+* PHP Activerecord
+* phpdotenv

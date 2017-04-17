@@ -12,4 +12,5 @@ namespace App\Models;
 class Post extends Model
 {
     protected static $name = "posts";
+    protected static $loaded = false;
 }

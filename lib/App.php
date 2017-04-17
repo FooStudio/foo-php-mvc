@@ -28,7 +28,6 @@ class App
 
     private function __construct()
     {
-
     }
 
     /**
@@ -42,17 +41,49 @@ class App
         return self::$instance;
     }
 
-    /**
-     *
-     */
-    public function bootstrap()
+    public function boot()
+    {
+        $this->loadEnv();
+        $this->setupBlade();
+        $this->setupRouter();
+        if (env('DB_CONNECTION') !== 'json') {
+            $this->setupActiveRecord();
+        }
+    }
+
+    private function loadEnv()
+    {
+        $dotEnv = new \Dotenv\Dotenv(__DIR__ . '/../');
+        $dotEnv->load();
+    }
+
+    private function setupBlade()
     {
         self::$blade = new Blade(['./resources/views/'], './app/cache');
         $GLOBALS['blade'] = self::$blade;
+    }
+
+    private function setupRouter()
+    {
         self::$router = new AltoRouter();
+        if(env('APP_BASE_PATH') !== '' ){
+            self::$router->setBasePath(env('APP_BASE_PATH'));
+        }
         $GLOBALS['router'] = self::$router;
     }
 
+    private function setupActiveRecord()
+    {
+        $connection = env('DB_CONNECTION') . '://' . env('DB_USERNAME') . ':' . env('DB_PASSWORD') .'@' . env('DB_HOST') . '/' . env('DB_DATABASE');
+        $cfg = ActiveRecord\Config::instance();
+        $cfg->set_model_directory("./app/models");
+        $cfg->set_connections(
+            array(
+                'development' => $connection
+            )
+        );
+        $cfg->set_default_connection('development');
+    }
 
     /**
      * @param string $path

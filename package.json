@@ -12,9 +12,28 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.2",
     "cross-env": "^4.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-html": "^2.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
     "laravel-mix": "^0.10.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1"
+  },
+  "dependencies": {
+    "domready": "^1.0.8",
+    "gsap": "^1.19.1",
+    "lost": "^8.0.0",
+    "nib": "^1.1.2",
+    "poststylus": "^0.2.3",
+    "rucksack-css": "^0.9.1",
+    "rupture": "^0.6.2",
+    "sanitize.css": "^5.0.0",
+    "vue": "^2.2.6"
   }
 }
